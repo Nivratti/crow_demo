@@ -8,6 +8,7 @@
 
 #include "crow.h"
 
+// int global_x = 123;
 
 int main()
 {
@@ -15,6 +16,7 @@ int main()
 
     // hello world - default route
     CROW_ROUTE(app, "/")([](){
+        // std::cout<< global_x;
         return "Hello world";
     });
 
